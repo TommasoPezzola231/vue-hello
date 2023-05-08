@@ -9,8 +9,17 @@
 </head>
 <body>
     <div id="app">
-        <h1>{{message}}</h1>
-        <img v-bind:src="img" alt="">
+        <header>
+            <h1>{{message}}</h1>
+        </header>
+
+        <main>
+            <div>
+                <label>Inserisci l'URL dell'immagine</label>
+                <input v-model="img">
+            </div>
+            <img v-bind:src="img" alt="">
+        </main>
     </div>
     
     
